@@ -72,7 +72,5 @@ def copy(indir, infilename, outdir, outfilename=None, maxshape=(None,), chunks=(
         except:
             pass
 
-    if ret is None:
-        return
-    elif ret == 'file':
+    if ret == 'file':
         return f_out
