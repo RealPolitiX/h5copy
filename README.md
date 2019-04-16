@@ -1,2 +1,2 @@
-# h5py_test
-Tests on HDF5 readout
+# h5copy
+File copier for the HDF5 format.
