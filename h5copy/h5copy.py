@@ -50,9 +50,10 @@ def copy(indir, infilename, outdir, outfilename=None, maxshape=(None,), chunks=(
             f_out.create_dataset(g, data=f_in[g][:], maxshape=maxshape, chunks=chunks, **kwds)
             group_attrs = list(f_in[g].attrs)
 
-            # Copy attributes associated with the group
-            for ga in group_attrs:
-                f_out[g].attrs.create(ga, f_in[g].attrs[ga])
+            if len(group_attrs) > 0:
+                # Copy attributes associated with the group
+                for ga in group_attrs:
+                    f_out[g].attrs.create(ga, f_in[g].attrs[ga])
 
         copied = 1
 
