@@ -11,7 +11,7 @@ Copy HDF5 files along with each constituent group's parameters.
 
 ### Installation
 
-```pip install git+https://github.com/RealPolitiX/h5copy.git```
+```pip install git+https://github.com/mpes-kit/h5copy.git```
 
 
 
